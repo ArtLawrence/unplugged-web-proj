@@ -329,8 +329,12 @@ footer {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
+@media (min-width: 768px) {
+    /* Tablet Styles Here */
+}
+
+@media (min-width: 940px) {
+    /*Desltop Styles Here*/
 }
 
 @media print,
