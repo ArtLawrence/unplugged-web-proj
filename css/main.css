@@ -1,10 +1,12 @@
 /*! HTML5 Boilerplate v6.0.1 | MIT License | https://html5boilerplate.com/ */
 
+
 /*
  * What follows is the result of much research on cross-browser styling.
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
  * Kroc Camen, and the H5BP dev community and team.
  */
+
 
 /* ==========================================================================
    Base styles: opinionated defaults
@@ -14,7 +16,9 @@ html {
     color: #222;
     font-size: 1em;
     line-height: 1.4;
+    font-family: "ariel black regular", Arial, Helvetica, sans-serif;
 }
+
 
 /*
  * Remove text-shadow in selection highlight:
@@ -36,6 +40,7 @@ html {
     text-shadow: none;
 }
 
+
 /*
  * A better looking default horizontal rule
  */
@@ -48,6 +53,7 @@ hr {
     margin: 1em 0;
     padding: 0;
 }
+
 
 /*
  * Remove the gap between audio, canvas, iframes,
@@ -64,6 +70,7 @@ video {
     vertical-align: middle;
 }
 
+
 /*
  * Remove default fieldset styles.
  */
@@ -74,6 +81,7 @@ fieldset {
     padding: 0;
 }
 
+
 /*
  * Allow only vertical resizing of textareas.
  */
@@ -81,6 +89,7 @@ fieldset {
 textarea {
     resize: vertical;
 }
+
 
 /* ==========================================================================
    Browser Upgrade Prompt
@@ -93,29 +102,105 @@ textarea {
     padding: 0.2em 0;
 }
 
+
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
 
+a {
+    color: blue;
+}
+
+h1,
+h2 {
+    font-weight: 700;
+}
 
 
+/*===========================================================================
+Header
+===========================================================================*/
+
+header {
+    width: 100%;
+}
+
+#logo {
+    width: 50%;
+}
 
 
+/*--------------------- Nav --------------------------*/
+
+nav {}
 
 
+/*===========================================================================
+Main
+===========================================================================*/
+
+main {
+    width: 96%;
+    padding: 0 2%;
+}
+
+.hero-area {
+    width: 100%;
+}
+
+.top-story {}
+
+.top-img {}
+
+.top-info {}
 
 
+/*------------------- Sidebar ------------------------*/
+
+.sidebar {}
+
+.sidebar-upcoming {}
+
+.sidebar-faq {}
+
+.newsletter {}
 
 
+/*------------------- Newsletter ---------------------*/
 
 
+/*------------------- News/Reviews -------------------*/
+
+.feed {}
+
+.feed-item {}
+
+.feed-item {}
+
+.feed-img {}
+
+.feed-info {}
 
 
+/*===========================================================================
+Footer
+===========================================================================*/
+
+footer {
+    width: 100%;
+    margin: auto;
+}
+
+#footer-logo {
+    width: 47.5%;
+    margin: auto;
+}
 
 
 /* ==========================================================================
    Helper classes
    ========================================================================== */
+
 
 /*
  * Hide visually and from screen readers
@@ -124,6 +209,7 @@ textarea {
 .hidden {
     display: none !important;
 }
+
 
 /*
  * Hide only visually, but have it available for screen readers:
@@ -145,8 +231,10 @@ textarea {
     padding: 0;
     position: absolute;
     width: 1px;
-    white-space: nowrap; /* 1 */
+    white-space: nowrap;
+    /* 1 */
 }
+
 
 /*
  * Extends the .visuallyhidden class to allow the element
@@ -167,6 +255,7 @@ textarea {
     white-space: inherit;
 }
 
+
 /*
  * Hide visually and from screen readers, but maintain layout
  */
@@ -174,6 +263,7 @@ textarea {
 .invisible {
     visibility: hidden;
 }
+
 
 /*
  * Clearfix: contain floats
@@ -189,13 +279,16 @@ textarea {
 
 .clearfix:before,
 .clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
 }
 
 .clearfix:after {
     clear: both;
 }
+
 
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
@@ -208,11 +301,12 @@ textarea {
 }
 
 @media print,
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
     /* Style adjustments for high resolution devices */
 }
+
 
 /* ==========================================================================
    Print styles.
@@ -225,35 +319,30 @@ textarea {
     *:before,
     *:after {
         background: transparent !important;
-        color: #000 !important; /* Black prints faster:
+        color: #000 !important;
+        /* Black prints faster:
                                    http://www.sanbeiji.com/archives/953 */
         box-shadow: none !important;
         text-shadow: none !important;
     }
-
     a,
     a:visited {
         text-decoration: underline;
     }
-
     a[href]:after {
         content: " (" attr(href) ")";
     }
-
     abbr[title]:after {
         content: " (" attr(title) ")";
     }
-
     /*
      * Don't show links that are fragment identifiers,
      * or use the `javascript:` pseudo protocol
      */
-
     a[href^="#"]:after,
     a[href^="javascript:"]:after {
         content: "";
     }
-
     pre {
         white-space: pre-wrap !important;
     }
@@ -262,28 +351,23 @@ textarea {
         border: 1px solid #999;
         page-break-inside: avoid;
     }
-
     /*
      * Printing Tables:
      * http://css-discuss.incutio.com/wiki/Printing_Tables
      */
-
     thead {
         display: table-header-group;
     }
-
     tr,
     img {
         page-break-inside: avoid;
     }
-
     p,
     h2,
     h3 {
         orphans: 3;
         widows: 3;
     }
-
     h2,
     h3 {
         page-break-after: avoid;
